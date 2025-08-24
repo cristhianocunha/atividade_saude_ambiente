@@ -7,6 +7,16 @@
     <title>Site Saúde e ambiente</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        /* Css da divisão */
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba #00000026 (0, 0, 0, .15);
+        }
+    </style>
 </head>
 
 <body>
@@ -18,9 +28,9 @@
         <ul class="nav nav-pills">
             <li class="nav-item"><a href="#inicio" class="nav-link active" aria-current="page">Inicio</a></li>
             <li class="nav-item"><a href="#quem-somos" class="nav-link">Quem somos</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Agenda 2030</a></li>
+            <li class="nav-item"><a href="#agenda2030" class="nav-link">Agenda 2030</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Peguntas</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>c
+            <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
         </ul>
     </header>
     <div id="inicio" class="px-4 py-5 my-5 text-center">
@@ -40,14 +50,19 @@
                 físico, mental e social, que só é possível em um ecossistema equilibrado e saudável.
             </p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button data-bs-toggle="modal" data-bs-target="#saude" type="button" class="btn btn-primary btn-lg px-4 gap-3" >Saúde</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Ambiente</button>
+                <button data-bs-toggle="modal" data-bs-target="#saude" type="button"
+                    class="btn btn-primary btn-lg px-4 gap-3">Saúde</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4" data-bs-toggle="modal"
+                    data-bs-target="#ambiente" type="button">Ambiente</button>
             </div>
         </div>
     </div>
 
 
-<div class="b-example-divider"></div>
+
+    <!-- Div de divisão  -->
+    <div class="b-example-divider"></div>
+    <!-- Div de divisão  -->
 
     <div class="container px-4 py-5" id="quem-somos">
         <h2 class="pb-2 border-bottom">
@@ -61,7 +76,8 @@
                     class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
                     <svg class="bi" width="1em" height="1em" aria-hidden="true">
                         <use xlink:href="#toggles2"></use>
-                    </svg> </div>
+                    </svg>
+                </div>
                 <div>
                     <h3 class="fs-2 text-body-emphasis">
                         <font dir="auto" style="vertical-align: inherit;">
@@ -88,7 +104,8 @@
                     class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
                     <svg class="bi" width="1em" height="1em" aria-hidden="true">
                         <use xlink:href="#cpu-fill"></use>
-                    </svg> </div>
+                    </svg>
+                </div>
                 <div>
                     <h3 class="fs-2 text-body-emphasis">
                         <font dir="auto" style="vertical-align: inherit;">
@@ -115,7 +132,8 @@
                     class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
                     <svg class="bi" width="1em" height="1em" aria-hidden="true">
                         <use xlink:href="#tools"></use>
-                    </svg> </div>
+                    </svg>
+                </div>
                 <div>
                     <h3 class="fs-2 text-body-emphasis">
                         <font dir="auto" style="vertical-align: inherit;">
@@ -140,46 +158,70 @@
         </div>
     </div>
 
+    <!-- Div de divisão  -->
+    <div class="b-example-divider"></div>
+    <!-- Div de divisão  -->
+
+    <div class="container px-4 py-5" id="agenda2030">
+        <div class="row ">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Agenda 2030
+
+                </h2>
+                <p class="lead">A Agenda 2030 para o Desenvolvimento Sustentável, é um plano de ação global adotado pela
+                    ONU em 2015 que estabelece 17 Objetivos de D</p>
+            </div>
+            <div class="col-md-5">
+                <img src="https://www.un.org/sustainabledevelopment/wp-content/uploads/sites/3/2015/01/S-SDG-Poster_-Letter.jpg"
+                    class="img-fluid" alt="Agenda 2030" width="500" height="500">
+
+
+            </div>
+        </div>
+    </div>
 
     <!-- Modal Saude -->
-<div class="modal fade" id="saude" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Saude</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+    <div class="modal fade" id="saude" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Saíde</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    A saúde humana não é um fenômeno isolado. Ela é profundamente moldada e influenciada
+                    pelo ambiente em que vivemos.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
     <!-- Modal ambiente -->
-<div class="modal fade" id="ambiente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Ambiente</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+    <div class="modal fade" id="ambiente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Ambiente</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    A relação entre saúde e ambiente é uma via de mão dupla: a qualidade do
+                    ambiente determina a qualidade da nossa saúde, e as ações humanas determinam a qualidade do
+                    ambiente.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-    
-    
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
